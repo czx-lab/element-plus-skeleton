@@ -1,7 +1,8 @@
 <template>
   <el-menu
     default-active="2"
-    class="el-menu-vertical-demo"
+    class="menu-vertical"
+    :style="{height: 'calc(100vh - '+ Config.HeaderHeight + 'px)'}"
     :collapse="isCollapse"
     @open="handleOpen"
     @close="handleClose"
@@ -40,19 +41,22 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 import {
   Location,
   Document,
   Menu as IconMenu,
-  Setting,
-} from "@element-plus/icons-vue";
+  Setting
+} from '@element-plus/icons-vue'
+import { Config } from '~/constants/system'
 
-const isCollapse = ref(true);
+const isCollapse = ref(false)
 const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
+  console.log(key, keyPath)
 };
 const handleClose = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
+  console.log(key, keyPath)
 };
 </script>
+<style lang="scss" scoped>
+</style>

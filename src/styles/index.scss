@@ -1,5 +1,27 @@
 @use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
 
+::root {
+  --ep-scrollbar-opacity: .3;
+  --ep-scrollbar-bg-color: var(--ep-text-color-secondary);
+  --ep-scrollbar-hover-opacity: .5;
+  --ep-scrollbar-hover-bg-color: var(--ep-text-color-secondary);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--ep-scrollbar-bg-color, var(--ep-text-color-secondary));
+  transition: var(--ep-transition-duration) background-color;
+  opacity: var(--ep-scrollbar-opacity, .3);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
 body {
   font-family: Inter, system-ui, Avenir, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
     "Microsoft YaHei", "微软雅黑", Arial, sans-serif;

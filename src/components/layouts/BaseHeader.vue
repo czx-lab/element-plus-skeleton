@@ -31,4 +31,7 @@ import { toggleDark } from '~/composables'
 </template>
 
 <style lang="scss" scoped>
+.el-menu {
+  background-color: transparent !important;
+}
 </style>

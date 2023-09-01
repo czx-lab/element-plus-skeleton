@@ -48,5 +48,6 @@
   background-size: 4px 4px;
   backdrop-filter: saturate(50%) blur(4px);
   -webkit-backdrop-filter: saturate(50%) blur(4px);
+  @include flex(row);
 }
 </style>

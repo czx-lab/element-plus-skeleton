@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "element-plus": "^2.3.9",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "dayjs": "^1.11.9",
+    "vue-router": "^4.0.13",
+    "normalize.css": "^8.0.1",
+    "pinia": "^2.1.6"
   },
   "devDependencies": {
     "@iconify-json/ep": "^1.1.12",

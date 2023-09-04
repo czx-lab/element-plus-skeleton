@@ -3,7 +3,7 @@ import { toggleDark } from '~/composables'
 </script>
 
 <template>
-  <el-menu class="el-menu" mode="horizontal">
+  <el-menu class="bg-transparent" mode="horizontal">
     <el-menu-item index="1">Element Plus</el-menu-item>
     <el-sub-menu index="2">
       <template #title>Workspace</template>
@@ -29,9 +29,3 @@ import { toggleDark } from '~/composables'
     </el-menu-item>
   </el-menu>
 </template>
-
-<style lang="scss" scoped>
-.el-menu {
-  background-color: transparent !important;
-}
-</style>
